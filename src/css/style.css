@@ -11,6 +11,7 @@
 :root {
     --clr-light: #f1f2f6;
     --clr-lighter: #ffffff;
+    --clr-middle-light: #f5f6fa;
     --clr-dark: #2d3436;
     --clr-accent: #00b894;
     --clr-accent-darker: #009679;
@@ -110,6 +111,37 @@ h2:after {
     margin-bottom: 10px;
 }
 
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: var(--clr-accent);
+    font-size: 120%;
+    margin-right: 10px;
+
+    /* secrets to align text or icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+/* LINKS */
+
+a:link,
+a:active {
+    color: var(--clr-accent);
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--clr-accent);
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: var(--clr-dark);
+    border-bottom: 1px solid transparent;
+}
+
 /* BUTTONS */
 
 .btn:link,
@@ -205,6 +237,10 @@ header {
 
 /* FEATURES */
 
+.section-features{
+    background-color: var(--clr-middle-light);
+}
+
 .section-features .long-copy {
     margin-bottom: 40px;
 }
@@ -285,7 +321,7 @@ header {
     border: 2px solid var(--clr-accent);
     display: inline-block;
     border-radius: 50%;
-    height: 45px; width: 45px;
+    height: 50px; width: 50px;
     text-align: center;
     padding: 5px;
     float: left;
@@ -298,8 +334,29 @@ header {
     border: 0;
 }
 
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
 .btn-app img {
     height: 50px; width: auto;
     margin-right: 10px;
 }
 
+/* CITIES */
+
+.section-cities {
+    background-color: var(--clr-middle-light);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+
+}
