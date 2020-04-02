@@ -266,6 +266,20 @@ header {
     border-bottom: 2px solid var(--clr-accent);
 }
 
+/* MOBILE NAV */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+    text-decoration: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: var(--clr-lighter);
+}
+
 /* STICKY NAV */
 
 .sticky {
