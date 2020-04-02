@@ -32,6 +32,7 @@ html, body {
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .clearfix { zoom: 1 }
@@ -141,6 +142,7 @@ a:active {
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid var(--clr-accent);
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -160,6 +162,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -199,6 +202,7 @@ input[type=submit] {
 /* HEADER */
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--clr-background)), to(var(--clr-background))), url(images/hero.jpg);
     background-image: linear-gradient(var(--clr-background), var(--clr-background)), url(images/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -211,7 +215,8 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50% );
+    -webkit-transform: translate(-50%, -50% );
+            transform: translate(-50%, -50% );
 }
 
 .logo {
@@ -240,6 +245,7 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -287,13 +293,18 @@ header {
     opacity: 0.8;
     width: 100%;
     height: auto;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
     opacity: 1;
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
 }
 
 /* HOW IT WORKS */
@@ -376,6 +387,7 @@ header {
 /* TESTIMONIALS */
 
 .section-testimonials {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--clr-background)), to(var(--clr-background))), url(images/back-customers.jpg);
     background-image: linear-gradient(var(--clr-background), var(--clr-background)), url(images/back-customers.jpg);
     background-size: cover;
     color: var(--clr-light);
@@ -531,6 +543,7 @@ footer {
     text-decoration: none;
     border: 0;
     color: var(--clr-middle-light);
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -547,6 +560,7 @@ footer {
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-instagram-outline {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
