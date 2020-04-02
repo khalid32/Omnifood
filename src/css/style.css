@@ -14,6 +14,7 @@
 
 :root {
     --clr-light: #f1f2f6;
+    --clr-light-rgba: rgba(241, 242, 246, 0.95);
     --clr-lighter: #ffffff;
     --clr-middle-light: #f5f6fa;
     --clr-grey: #b2bec3;
@@ -226,6 +227,16 @@ header {
     margin-top: 20px;
 }
 
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* MAIN NAV */
+
 .main-nav {
     float: right;
     list-style: none;
@@ -253,6 +264,27 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid var(--clr-accent);
 }
+
+/* STICKY NAV */
+
+.main-nav { margin-top: 18px; }
+
+.sticky {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background-color: var(--clr-light-rgba);
+    box-shadow: 0 2px 2px #d3dbde;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: var(--clr-dark);
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
 /* FEATURES */
 
