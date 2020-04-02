@@ -33,6 +33,7 @@ html, body {
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
